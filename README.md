@@ -6,9 +6,6 @@ Repository made for movesense cardiac data tutorial
 
 This hands-on workshop provides a comprehensive pipeline for analyzing physiological data from movesense biosensors, with a focus on ECG preprocessing and heart rate variability (HRV) analysis for dyadic synchrony studies.
 
-**Duration**: 60 minutes  
-**Level**: Intermediate (basic Python/pandas knowledge required)  
-**Focus**: Cardiac synchrony analysis in dyadic interactions
 
 ---
 
@@ -46,14 +43,12 @@ tutorial_dyadic_movesense/
 By the end of this workshop, you will be able to:
 
 1. **Load and organize** biosensor data from multiple participants
-2. **Understand** ECG signal components and cardiac metrics
-3. **Implement two analysis pipelines**:
+2. **Implement two analysis pipelines**:
    - Quick pipeline using pre-computed heart rate
    - Comprehensive pipeline with raw ECG preprocessing
-4. **Compute physiological synchrony** between participants
-5. **Make informed decisions** about which pipeline to use for your research.
+3. **Compute physiological synchrony** between participants using a few different methods
 
-Please keep in mind that this tutorial does not provide you any guiidance on which analysis is right for your data analysis. I'm giving you a lot of options, which one you choose and how to tailor it for your needs is another question.
+Please keep in mind that this tutorial does not provide you any guidance on which analysis is right for your data analysis. I'm giving you a lot of options, which one you choose and how to tailor it for your needs is another question. It's also imporatnt to know that there may be mistakes in the more complex signal processing steps, I compiled all this in a matter of days. Lastly, this workshop does not cover statistical analysis, it's about reading in data and signal processing.
 
 ---
 
