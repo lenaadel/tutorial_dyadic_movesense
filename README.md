@@ -51,13 +51,15 @@ By the end of this workshop, you will be able to:
    - Quick pipeline using pre-computed heart rate
    - Comprehensive pipeline with raw ECG preprocessing
 4. **Compute physiological synchrony** between participants
-5. **Make informed decisions** about which pipeline to use for your research
+5. **Make informed decisions** about which pipeline to use for your research.
+
+Please keep in mind that this tutorial does not provide you any guiidance on which analysis is right for your data analysis. I'm giving you a lot of options, which one you choose and how to tailor it for your needs is another question.
 
 ---
 
 ## Workshop Structure
 
-### **Notebook 1: Data Loading and Exploration** (10 min)
+### **Notebook 1: Data Loading and Exploration**
 - Understanding folder structure and file formats
 - Loading annotations and defining experimental windows
 - Visual inspection of raw ECG signals
@@ -67,59 +69,32 @@ By the end of this workshop, you will be able to:
 
 ---
 
-### **Notebook 2: Quick Pipeline** (15 min)
+### **Notebook 2: Quick Pipeline**
 - Working with pre-computed heart rate data
 - Computing correlation-based synchrony
 - Windowed synchrony analysis
 - Cross-correlation for leader-follower dynamics
 
-**Key Concepts**: HR vs IBI, Pearson correlation, temporal dynamics
-
 **Use Cases**: 
 - Real-time neurophenomenology
 - Rapid exploratory analysis
-- Prototyping synchrony metrics
 
 ---
 
-### **Notebook 3: Full ECG Processing Pipeline** (25 min)
+### **Notebook 3: Full ECG Processing Pipeline**
 - ECG signal cleaning with NeuroKit2
 - R-peak detection
 - Computing RR intervals
-- Comprehensive HRV analysis (time, frequency, nonlinear domains)
-- R-peak based synchrony metrics
+- More comprehensive HRV analysis (time, frequency, nonlinear domains)
 
-**Key Concepts**: Signal processing, HRV metrics, LF/HF components
-
-**Use Cases**:
-- Research publications
-- Detailed physiological analysis
-- When you need beat-to-beat precision
 
 ---
 
-### **Wrap-up** (10 min)
-- Comparing pipeline results
-- Q&A and discussion
-- Next steps for your research
-
----
-
-## Additional Notebooks (Post-Workshop)
+## Additional Notebooks
 
 ### **Notebook 4: Modular Synchrony Analysis Framework**
 - Flexible framework for computing multiple synchrony metrics
 - Methods: Correlation, Cross-correlation, Coherence, PLI, Envelope, CRQA
-- Easy to extend with new methods
-- Windowed analysis support
-- Batch processing capabilities
-
-**Key Concepts**: Multiple synchrony methods, modular design, advanced metrics
-
-**Use Cases**:
-- Comparing different synchrony approaches
-- Comprehensive physiological coupling analysis
-- Custom metric development
 
 ---
 
@@ -128,13 +103,6 @@ By the end of this workshop, you will be able to:
 - Temporal evolution of synchrony patterns
 - Windowed dyadic analysis (30-second segments)
 - Visual tracking of coordination dynamics
-
-**Key Concepts**: Poincaré plots, dyadic patterns, temporal dynamics
-
-**Use Cases**:
-- Visualizing dyadic HRV patterns
-- Tracking coordination changes over time
-- Understanding beat-to-beat dyadic coupling
 
 ---
 
@@ -198,11 +166,11 @@ See `00_terminology_reference.md` for detailed definitions of:
 2. **Install dependencies**: `pip install -r requirements.txt`
 3. **Place your data** in the `data/` folder if you want to use your own.
 4. **Open** `01_data_loading_and_exploration.ipynb`
-5. **Follow along** with the workshop!
+5. **Follow along** with the workshop :)
 
 ### Using Your Own Data
 
-To use your own biosensor data:
+To use your own movesense data:
 
 1. Organize your data following the structure shown above
 2. Update the `data_dir` path in Notebook 1
@@ -211,70 +179,7 @@ To use your own biosensor data:
 
 ---
 
-## Pipeline Comparison
 
-| Feature | Quick Pipeline | Full Pipeline |
-|---------|---------------|---------------|
-| **Speed** | Fast (seconds) | Slower (minutes) |
-| **Input** | Pre-computed HR | Raw ECG |
-| **Preprocessing** | None needed | Signal cleaning |
-| **HRV Metrics** | Limited | Comprehensive |
-| **Precision** | ~2 Hz | Beat-to-beat |
-| **Use Case** | Real-time, exploratory | Research, detailed analysis |
-
----
-
-## Tips for Success
-
-### For Workshop Facilitators:
-- **Pre-run all notebooks** to verify they work
-- **Prepare backup data** in case of issues
-- **Have examples ready** of good vs. poor quality signals
-- **Budget 5 extra minutes** for Q&A
-- **Encourage hands-on practice** in the "Try It Yourself" sections
-
-### For Participants:
-- **Follow along actively** - run each cell as we go
-- **Ask questions** when concepts are unclear
-- **Experiment** with parameters in the exercises
-- **Take notes** on which approaches work for your research
-- **Save your modified notebooks** for future reference
-
----
-
-## Advanced Topics (Beyond Workshop)
-
-Once comfortable with the basics, explore:
-
-1. **Advanced Synchrony Metrics** (See Notebook 4):
-   - Phase synchrony (Hilbert transform) - PLI method
-   - Coherence analysis (frequency-domain)
-   - Cross-recurrence (CRQA)
-   - Envelope correlation
-   - Granger causality
-   - Dynamic Time Warping
-
-2. **Dyadic Visualization** (See Notebook 4b):
-   - Overlaid Poincaré plots
-   - Windowed dyadic patterns
-   - Temporal evolution tracking
-
-3. **Multivariate Analysis**:
-   - Combining ECG with EDA (electrodermal activity)
-   - Respiratory sinus arrhythmia
-   - Multi-modal synchrony
-
-4. **Statistical Analysis**:
-   - Significance testing for synchrony
-   - Comparing synchrony across conditions
-   - Mixed-effects models
-
-5. **Real-time Implementation**:
-   - Streaming data processing
-   - Online R-peak detection
-   - Live synchrony visualization
-
----
 
 ## References and Further Reading
 
@@ -288,15 +193,3 @@ Once comfortable with the basics, explore:
 
 ---
 
-
-## License
-
-This workshop material is provided for training purposes but please cite appropriately if you use these materials in your research. 
-
----
-
-## Acknowledgments
-
-This workshop was designed for researchers working with biosensor data in social neuroscience, neurophenomenology, and dyadic interaction studies.
-
-**** 
